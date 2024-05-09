@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  position: relative;
+  display: grid;
+  place-content: center;
+  font-family: "Ubuntu Sans", sans-serif;
+}
+/**** header *****/
+.headercontent {
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.headerfixed {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 60px;
+  height: 14vh;
+  font-size: 18px;
+}
+h4.leftheadercontent {
+  font-weight: normal;
+  animation: fromup 2s ease-in-out forwards;
+}
+
+.headercontent .rightheadercontent a:hover {
+  font-weight: 200;
+}
+
+.rightheadercontent:has(.sub-rightheadercontent:hover)
+  .sub-rightheadercontent:not(:hover)
+  a {
+  transform: translateY(3px);
+  transition: transform 0.75s ease-in-out;
+}
+
+.container {
+  padding: 100px;
+  max-width: 100%;
+  width: 1280px;
+}
+.container h1 {
+  font-size: 84px;
+  width: 800px;
+  text-align: left;
+  position: relative;
+  margin-top: 40px;
+  opacity: 1;
+  animation: fromrotate 1s ease-in forwards;
+}
+.container button {
+  background-color: #000;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 40px;
+  width: 260px;
+  height: 60px;
+  margin: 50px 0;
+  cursor: pointer;
+  display: block;
+  border: none;
+
+  opacity: 1;
+  animation: fromleft 1.5s ease-in forwards;
+}
+/* button icon animation */
+.container button i {
+  padding-left: 10px;
+  transform: rotate(0);
+  transition: transform 0.75s ease-in-out;
+}
+.container button:hover i {
+  transform: rotate(-45deg);
+}
+
+/* button text animation*/
+.container button h4 {
+  cursor: pointer;
+
+  transform: translateY(0px);
+}
+.container button:hover h4 {
+  transform: translateY(-10px);
+}
+
+.bio-info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 1100px;
+  margin-top: 60px;
+}
+.bio-info .paragraph {
+  width: 80%;
+}
+.bio-info .paragraph p {
+  line-height: 35px;
+  text-align: left;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+@keyframes fromleft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromrotate {
+  from {
+    opacity: 0;
+    transform: rotate(10deg);
+  }
+  to {
+    opacity: 1;
+
+    transform: rotate(0);
+  }
+}
+@keyframes topup {
+  from {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease-in-out;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.headercontent .rightheadercontent {
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap: 20px;
+}
+
+.headercontent .rightheadercontent div {
+  opacity: 0;
+  animation: fromup 0.75s ease-in forwards;
+}
+/* .headercontent .rightheadercontent div:nth-child(1) {
+  animation-delay: 2s;
+}
+.headercontent .rightheadercontent div:nth-child(2) {
+  animation-delay: 2.5s;
+}
+.headercontent .rightheadercontent div:nth-child(3) {
+  animation-delay: 2.8s;
+} */
+.headercontent .rightheadercontent div.sub1 {
+  animation-delay: 1.2s;
+}
+.headercontent .rightheadercontent div.sub2 {
+  animation-delay: 1.4s;
+}
+.headercontent .rightheadercontent div.sub3 {
+  animation-delay: 1.6s;
+}
+.headercontent .rightheadercontent a {
+  font-weight: 100;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+@keyframes fromup {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.projects {
+  margin: 60px 0px;
+}
+.projects a {
+  font-size: 20px;
+  font-weight: normal;
+}
+.projects .project-heading {
+  font-size: 48px;
+}
+.projects .paragraph1 {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.projects .paragraph1 .paragraph-details a {
+  line-height: 25px;
+}
+.projects .paragraph1 .paragraph-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
