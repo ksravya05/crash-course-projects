@@ -160,32 +160,106 @@ body {
   padding: 10px;
 }
 .seatersofa {
-  background: linear-gradient(129deg, #f7e0c8, #f2c28f 100%);
+  background: linear-gradient(129deg, #96c9d6, #b3cbc7 100%);
   grid-column: 1/3;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* .seatersofa a{
+ margin: 80px 0;
+    display: block;
+
+} Can be used this way too*/
+.seatersofa img {
+  height: 100%;
+  width: 70%;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  opacity: 0.75;
+  position: absolute;
+  object-fit: cover;
 }
 .plumagehand {
+  position: relative;
+
   grid-row: 1/3;
   grid-column: 3/4;
-  background: linear-gradient(140deg, #e1f5f1, #d9e8fa 100%);
+  background: linear-gradient(140deg, #9899a4, #d9dbdc 100%);
+}
+.plumagehand img {
+  height: 80%;
+  width: 70%;
+  bottom: 0;
+  right: 28px;
+  border-radius: 5px;
+  opacity: 0.75;
+  position: absolute;
+  object-fit: cover;
 }
 .dinningchair {
+  position: relative;
+
   grid-row: 1/3;
   grid-column: 4/5;
-  background: linear-gradient(129deg, #dfdff5, #e8daf7 100%);
+  background: linear-gradient(129deg, #f2e4de, #bfa99f 100%);
+}
+.dinningchair img {
+  height: 90%;
+  width: 90%;
+  bottom: 0;
+  left: 11px;
+  border-radius: 5px;
+  opacity: 0.75;
+  position: absolute;
+  object-fit: cover;
 }
 .stoolbenches {
-  background: linear-gradient(140deg, #faecf8, #f8cedf 100%);
+  position: relative;
+  background: linear-gradient(140deg, #f3e9e0, #f1c9a6 100%);
   grid-row: 2/4;
+}
+.stoolbenches img {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0px;
+  border-radius: 5px;
+  opacity: 0.75;
+  object-fit: cover;
+  position: absolute;
 }
 .stoolchair {
+  position: relative;
   grid-row: 2/4;
-  background: linear-gradient(140deg, #f7e9da, #e3f7da 100%);
+  background: linear-gradient(140deg, #aca8a5, #d3d0ce 100%);
+}
+.stoolchair img {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: -20px;
+  border-radius: 5px;
+  opacity: 0.75;
+  position: absolute;
+  object-fit: cover;
 }
 .accentchair {
+  position: relative;
   grid-column: 3/5;
-  background: linear-gradient(140deg, #f7e5e1, #fad9d2 100%);
+  background: linear-gradient(140deg, #f7e7da, #dcc3ad 100%);
 }
-
+.accentchair img {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0px;
+  border-radius: 5px;
+  opacity: 0.75;
+  position: absolute;
+  object-fit: cover;
+}
 .border {
   border-bottom: 1px solid darkgreen;
 }
