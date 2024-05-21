@@ -41,8 +41,8 @@ body {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  column-gap: 12px;
-  row-gap: 12px;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .content div {
@@ -58,6 +58,17 @@ body {
   gap: 18px;
   align-content: center;
   padding: 20px;
+}
+.content:has(.elements:hover) .elements:not(:hover) {
+  transition: 0.5s ease-in-out;
+  filter: blur(1px);
+  /*opacity: 1;  */
+}
+.content:has(.elements) {
+  transition: transform 0.2s ease-in-out;
+}
+.content:has(.elements:hover) .elements:hover {
+  transform: scale(1.1);
 }
 .content1 a:first-child,
 .content11 a:last-child,
@@ -83,7 +94,7 @@ body {
 .content10 img {
   position: absolute;
   width: 222px;
-  height: 190px;
+  height: 206px;
   border-radius: 15px;
   overflow: hidden;
   object-fit: cover;
@@ -172,6 +183,10 @@ body {
   gap: 18px;
   align-content: space-between;
   padding: 20px;
+}
+.content13 a:first-child {
+  display: block;
+  margin-bottom: 15px;
 }
 .content14 {
   grid-row: 7/10;
@@ -268,3 +283,7 @@ body {
 .content17 .subscribe i {
   padding-left: 10px;
 }
+/* .elements:has(.elements:hover) .elements:not(:hover) {
+  filter: blur(3px);
+  opacity: 1;
+} */
